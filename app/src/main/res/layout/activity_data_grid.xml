@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:id="@+id/header_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@id/header_rule"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/HeaderText"
+            android:layout_width="66dp"
+            android:layout_column="1"
+            android:layout_marginLeft="4dp"
+            android:layout_height="wrap_content"
+            android:text="Item" />
+
+        <TextView
+            style="@style/HeaderText"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:text="Quantity" />
+
+        <TextView
+            style="@style/HeaderText"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_columnWeight="2"
+            android:text="Description" />
+
+    </GridLayout>
+
+    <View
+        android:id="@+id/header_rule"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        app:layout_constraintTop_toBottomOf="@id/header_grid" />
+
+    <!---
+          Dummy grid rows for mockup. Need adjustment. These rows
+          will be dynamically created from code using data from sql
+          in the final project.
+    -->
+    <GridLayout
+        android:id="@+id/inventory_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        app:layout_constraintTop_toBottomOf="@+id/header_rule">
+
+        <TextView
+            style="@style/ListText"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_column="1"
+            android:text="Box" />
+
+
+        <TextView
+            style="@style/ListText"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:text="2" />
+
+        <TextView
+
+            style="@style/ListText"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:text="A box to hold all of your things" />
+
+        <Button
+            android:id="@+id/btnOptions"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="left"
+            android:background="@android:color/transparent"
+            android:onClick="showPopup"
+            android:paddingEnd="10dp"
+            android:text="&#8942;"
+            android:layout_column="4"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="25dp" />
+
+    </GridLayout>
+
+    <View
+        android:id="@+id/inventory_rule"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        app:layout_constraintTop_toBottomOf="@id/inventory_grid" />
+
+    <GridLayout
+        android:id="@+id/inventory_grid2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        app:layout_constraintTop_toBottomOf="@+id/inventory_rule">
+
+        <TextView
+            style="@style/ListText"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="4dp"
+            android:text="Staples" />
+
+        <TextView
+            style="@style/ListText"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:text="8" />
+
+
+        <TextView
+
+            style="@style/ListText"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:text="Attach papers together" />
+
+        <Button
+            android:id="@+id/btnOptions2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="left"
+            android:background="@android:color/transparent"
+            android:onClick="showPopup"
+            android:paddingEnd="10dp"
+            android:text="&#8942;"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="25dp" />
+
+    </GridLayout>
+
+
+
+    <!-- Add inventory button to open fragment_add_inventory-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:onClick="onAddClick"
+        android:src="@drawable/add_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="-87dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

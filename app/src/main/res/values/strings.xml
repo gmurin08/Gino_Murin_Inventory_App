@@ -1,6 +1,10 @@
 <resources>
-    <string name="app_name">Say Hello - Gino Murin - CS360</string>
+    <string name="app_name">Inventory - Gino Murin - CS360</string>
     <string name="hello_button">Say Hello</string>
     <string name="name_greeting">Hello %s!!!!</string>
     <string name="default_greeting">You must enter a name..</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

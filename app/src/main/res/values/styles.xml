@@ -15,4 +15,19 @@
         <item name="android:layout_marginTop">100dp</item>
     </style>
 
+    <style name="HeaderText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_gravity">fill_horizontal</item>
+    </style>
+
+    <style name="ListText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_gravity">fill_horizontal</item>
+    </style>
+
+    <style name="Widget.Theme.Gino_Murin_Inventory_App.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
 </resources>
