@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grid_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -50,113 +52,6 @@
         android:background="#c0c0c0"
         app:layout_constraintTop_toBottomOf="@id/header_grid" />
 
-    <!---
-          Dummy grid rows for mockup. Need adjustment. These rows
-          will be dynamically created from code using data from sql
-          in the final project.
-    -->
-    <GridLayout
-        android:id="@+id/inventory_grid"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:columnCount="5"
-        app:layout_constraintTop_toBottomOf="@+id/header_rule">
-
-        <TextView
-            style="@style/ListText"
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="4dp"
-            android:layout_column="1"
-            android:text="Box" />
-
-
-        <TextView
-            style="@style/ListText"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_column="2"
-            android:text="2" />
-
-        <TextView
-
-            style="@style/ListText"
-            android:layout_width="229dp"
-            android:layout_height="wrap_content"
-            android:layout_column="3"
-            android:text="A box to hold all of your things" />
-
-        <Button
-            android:id="@+id/btnOptions"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_gravity="left"
-            android:background="@android:color/transparent"
-            android:onClick="showPopup"
-            android:paddingEnd="10dp"
-            android:text="&#8942;"
-            android:layout_column="4"
-            android:textColor="@android:color/darker_gray"
-            android:textSize="25dp" />
-
-    </GridLayout>
-
-    <View
-        android:id="@+id/inventory_rule"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#c0c0c0"
-        app:layout_constraintTop_toBottomOf="@id/inventory_grid" />
-
-    <GridLayout
-        android:id="@+id/inventory_grid2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:columnCount="5"
-        app:layout_constraintTop_toBottomOf="@+id/inventory_rule">
-
-        <TextView
-            style="@style/ListText"
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:layout_column="1"
-            android:layout_marginLeft="4dp"
-            android:text="Staples" />
-
-        <TextView
-            style="@style/ListText"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:layout_column="2"
-            android:text="8" />
-
-
-        <TextView
-
-            style="@style/ListText"
-            android:layout_width="229dp"
-            android:layout_height="wrap_content"
-            android:text="Attach papers together" />
-
-        <Button
-            android:id="@+id/btnOptions2"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_gravity="left"
-            android:background="@android:color/transparent"
-            android:onClick="showPopup"
-            android:paddingEnd="10dp"
-            android:text="&#8942;"
-            android:textColor="@android:color/darker_gray"
-            android:textSize="25dp" />
-
-    </GridLayout>
-
 
 
     <!-- Add inventory button to open fragment_add_inventory-->
@@ -183,3 +78,4 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

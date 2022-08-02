@@ -3,7 +3,7 @@
     <menu xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto">
 
-        <item android:id="@+id/action_add_remove"
+        <item android:id="@+id/edit"
             android:title="Edit Quantity"
             android:onClick="openEditDialog"
             app:showAsAction="never"/>

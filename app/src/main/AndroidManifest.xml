@@ -23,7 +23,7 @@
         </activity>
         <activity android:name=".DataGridActivity" ></activity>
         <activity android:name=".AddInventoryActivity" ></activity>
-
+        <activity android:name=".EditInventoryActivity"></activity>
     </application>
 
 </manifest>

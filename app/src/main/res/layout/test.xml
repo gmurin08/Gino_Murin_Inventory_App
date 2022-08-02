@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grid_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+    <!---
+          Dummy grid rows for mockup. Need adjustment. These rows
+          will be dynamically created from code using data from sql
+          in the final project.
+    -->
+    <GridLayout
+        android:id="@+id/inventory_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/ListText"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_column="1"
+            android:text="Box" />
+
+
+        <TextView
+            style="@style/ListText"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:text="2" />
+
+        <TextView
+
+            style="@style/ListText"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:text="A box to hold all of your things" />
+
+        <Button
+            android:id="@+id/btnOptions2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="left"
+            android:background="@android:color/transparent"
+            android:onClick="showPopup"
+            android:paddingEnd="10dp"
+            android:text="&#8942;"
+            android:layout_column="4"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="25dp" />
+
+        <TextView
+            style="@style/ListText"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_column="1"
+            android:text="Box" />
+
+
+        <TextView
+            style="@style/ListText"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+
+            android:layout_column="2"
+            android:text="2" />
+
+        <TextView
+
+            style="@style/ListText"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:text="A box to hold all of your things" />
+
+        <Button
+            android:id="@+id/btnOptions"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="left"
+            android:background="@android:color/transparent"
+            android:onClick="showPopup"
+            android:paddingEnd="10dp"
+            android:text="&#8942;"
+            android:layout_column="4"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="25dp" />
+
+
+
+        <TextView
+            style="@style/ListText"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_column="1"
+            android:text="Box" />
+
+
+        <TextView
+            style="@style/ListText"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+
+            android:layout_column="2"
+            android:text="2" />
+
+        <TextView
+
+            style="@style/ListText"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:text="A box to hold all of your things" />
+
+        <Button
+            android:id="@+id/btnOptions3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="left"
+            android:background="@android:color/transparent"
+            android:onClick="showPopup"
+            android:paddingEnd="10dp"
+            android:text="&#8942;"
+            android:layout_column="4"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="25dp" />
+    </GridLayout>
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

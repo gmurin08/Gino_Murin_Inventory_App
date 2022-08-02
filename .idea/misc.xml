@@ -10,7 +10,8 @@
         <entry key="..\:/Users/Gino/AndroidStudioProjects/Gino_Murin_Inventory_App/app/src/main/res/drawable/ic_delete_forever_fill0_wght400_grad0_opsz48.xml" value="0.1" />
         <entry key="..\:/Users/Gino/AndroidStudioProjects/Gino_Murin_Inventory_App/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/Gino/AndroidStudioProjects/Gino_Murin_Inventory_App/app/src/main/res/layout/activity_add_inventory.xml" value="0.24818840579710144" />
-        <entry key="..\:/Users/Gino/AndroidStudioProjects/Gino_Murin_Inventory_App/app/src/main/res/layout/activity_data_grid.xml" value="0.375" />
+        <entry key="..\:/Users/Gino/AndroidStudioProjects/Gino_Murin_Inventory_App/app/src/main/res/layout/activity_data_grid.xml" value="0.1" />
+        <entry key="..\:/Users/Gino/AndroidStudioProjects/Gino_Murin_Inventory_App/app/src/main/res/layout/activity_edit_inventory.xml" value="0.25" />
         <entry key="..\:/Users/Gino/AndroidStudioProjects/Gino_Murin_Inventory_App/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/Gino/AndroidStudioProjects/Gino_Murin_Inventory_App/app/src/main/res/layout/activity_main.xml" value="0.24003623188405798" />
         <entry key="..\:/Users/Gino/AndroidStudioProjects/Gino_Murin_Inventory_App/app/src/main/res/layout/dialog_confirm_delete.xml" value="0.24818840579710144" />
@@ -18,6 +19,10 @@
         <entry key="..\:/Users/Gino/AndroidStudioProjects/Gino_Murin_Inventory_App/app/src/main/res/layout/fragment_add_inventory.xml" value="0.23777173913043478" />
         <entry key="..\:/Users/Gino/AndroidStudioProjects/Gino_Murin_Inventory_App/app/src/main/res/layout/fragment_add_inventory2.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/Gino/AndroidStudioProjects/Gino_Murin_Inventory_App/app/src/main/res/layout/fragment_add_invetory.xml" value="0.335" />
+        <entry key="..\:/Users/Gino/AndroidStudioProjects/Gino_Murin_Inventory_App/app/src/main/res/layout/grid.xml" value="0.2994791666666667" />
+        <entry key="..\:/Users/Gino/AndroidStudioProjects/Gino_Murin_Inventory_App/app/src/main/res/layout/gridbackup.xml" value="0.2536231884057971" />
+        <entry key="..\:/Users/Gino/AndroidStudioProjects/Gino_Murin_Inventory_App/app/src/main/res/layout/row.xml" value="0.2848731884057971" />
+        <entry key="..\:/Users/Gino/AndroidStudioProjects/Gino_Murin_Inventory_App/app/src/main/res/layout/test.xml" value="0.1" />
         <entry key="..\:/Users/Gino/AndroidStudioProjects/Gino_Murin_Inventory_App/app/src/main/res/menu/edit_inventory_menu.xml" value="0.3609375" />
       </map>
     </option>

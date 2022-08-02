@@ -2,21 +2,44 @@ package com.zybooks.gino_murin_inventory_app;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+
 import android.content.DialogInterface;
+
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.NumberPicker;
+import android.view.ViewGroup;
 
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatDialogFragment;
+import androidx.fragment.app.DialogFragment;
 
-public class ConfirmDeleteDialog extends AppCompatDialogFragment {
 
+public class ConfirmDeleteDialog extends DialogFragment {
 
+    static ConfirmDeleteDialog newInstance(int num) {
+        ConfirmDeleteDialog f = new ConfirmDeleteDialog();
+        System.out.println("Got " + num + " from ConfirmDeleteDialog newInstance()");
+        // Supply num input as an argument.
+        Bundle args = new Bundle();
+        args.putInt("num", num);
+        f.setArguments(args);
+
+        return f;
+    }
     @Override
-    public Dialog onCreateDialog(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+        int mNum = getArguments().getInt("num");
+        System.out.println("Got " + mNum + " from ConfirmDeleteDialog onCreate()");
+    }
 
-        LayoutInflater inflater = getActivity().getLayoutInflater();
+    @NonNull
+    @Override
+    public View onCreateView(LayoutInflater inflater,
+                                 ViewGroup container, Bundle savedInstanceState) {
+
         View view = inflater.inflate(R.layout.dialog_confirm_delete, null);
 
         //Setup for dialog view
@@ -29,6 +52,7 @@ public class ConfirmDeleteDialog extends AppCompatDialogFragment {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         //TODO: Handle logic for dynamically removing item from list
+                        System.out.println("You chose yes");
                     }
                 })
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -37,6 +61,6 @@ public class ConfirmDeleteDialog extends AppCompatDialogFragment {
                     }
                 });
 
-        return builder.create();
+        return view;
     }
 }
